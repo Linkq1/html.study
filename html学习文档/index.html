@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body {
+            margin: 0%;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        * {
+            /* border: 1px solid black; */
+
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .backgroungWhite {
+            background-color: white;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .mg {
+            margin: 8px;
+        }
+
+        .mgt {
+            margin-top: 8px;
+        }
+
+        .mgl {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <!--左边操作页-->
+    <div style="width: 200px;" class="backgroungWhite"> </div>
+
+    <!--右边页面-->
+    <div class="flex1 column">
+        <!--头部-->
+        <div style="height: 70px;" class="backgroungWhite"></div>
+        <!--主体-->
+        <div style="overflow:auto;" class="flex flex1">
+            <!--左边区域-->
+            <div style="flex: 3;flex-direction:column;" class="flex">
+                <!-- 数据 -->
+                <div class="flex">
+                    <div style="height: 100px;" class="flex1 backgroungWhite mg"></div>
+                    <div style="height: 100px;" class="flex1 backgroungWhite mg"></div>
+                    <div style="height: 100px;" class="flex1 backgroungWhite mg"></div>
+                    <div style="height: 100px;" class="flex1 backgroungWhite mg"></div>
+                </div>
+                <!-- 列表 -->
+                <div class="flex column">
+                    <!--列表项-->
+                    <div style="height: 160px;" class="backgroungWhite  mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite mgt mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite  mgt mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite mgt mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite  mgt mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite mgt mgl"></div>
+                    <div style="height: 160px;" class="backgroungWhite  mgt mgl"></div>
+                </div>
+            </div>
+            <!--右边区域-->
+            <div style="flex: 1;" class="flex column">
+                <!--提示区-->
+                <div style="height: 150px;" class="backgroungWhite mgl mgt"></div>
+                <!--消息-->
+                <div style="height: 300px;" class="backgroungWhite  mgl mgt"></div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
